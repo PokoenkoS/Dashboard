@@ -30,14 +30,23 @@ ul{
 
 
 }
+.main-content_icon {
+    width: 216px;
+    height: 38px;
+}
 
 .main-content_head {
     border-bottom: solid 1px #EEEEEE;
-      
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+}
+.main-content_nav {
+    display: flex;
+    justify-content: space-between;
+    
 }
 .main-content_title {
-    /* padding-top: 30px;
-    padding-left: 38px; */
     color: #000000;
     font-size: 22px; 
     font-style: SemiBold;
@@ -245,5 +254,10 @@ color: rgba(145, 151, 179, 1);
 }
 .aside-user {
     margin-top: 599px;
+}
+
+.aside-user_img {
+    width: 42px;
+    height: 42px;
 }
   
