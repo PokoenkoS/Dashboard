@@ -125,6 +125,7 @@ color:rgba(223, 4, 4, 1);
 }
 
 .aside {
+   
 width: 306px;
 height: 1198px;
 background: rgba(255, 255, 255, 1);
@@ -163,9 +164,11 @@ color: rgba(131, 131, 131, 1);
 
 }
 
+.aside-list-container {
+    padding-left: 29px;
+}
+
 .aside-list {
-width: 60px;
-height: 21px;
 font-size: 14px;
 font-weight: 500;
 line-height: 21px;
@@ -175,8 +178,72 @@ color: rgba(145, 151, 179, 1);
 
 
 }
-  /* .icon {
+.aside-title_item-dashboard::before {
+    content: "";
+    display: inline-block;
     width: 24px;
     height: 24px;
+    background-image: url("../images/dashboard.svg");
+    background-repeat: no-repeat;
+    padding-left: 14px;
+
+}
+
+.aside-title_item-product::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/product.svg");
+    background-repeat: no-repeat;
+    padding-left: 14px;
+}
+.aside-title_item-customers{
+    background-color: rgba(89, 50, 234, 1);
+    border-radius: 8px;
+    
+}
+.aside-title_item-customers::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/user.svg");
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    fill:#9197B3;
+}
+
+.aside-title_item-income::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/income.svg");
+    background-repeat: no-repeat;
+    padding-left: 14px;
+}
+
+.aside-title_item-promote::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/promote.svg");
+    background-repeat: no-repeat;
+    padding-left: 14px;
+}
+
+.aside-title_item-help::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/help.svg");
+    background-repeat: no-repeat;
+    padding-left: 14px;
+}
+.aside-user {
+    margin-top: 599px;
+}
   
-  } */
