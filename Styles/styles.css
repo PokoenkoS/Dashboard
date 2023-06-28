@@ -26,6 +26,17 @@ margin: 0;
     width: 1440px;
     margin: 0 auto;
 }
+.main-title {
+padding-top: 41px;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+
+
+
+}
 
 .main-content {
  background-color: #fff;
@@ -53,18 +64,6 @@ margin: 0;
     padding-right: 10px;
     padding-top: 14px;
 }
-
-.main-content_icon{
-    /* position: absolute; */
-    /* left: 10px;
-    top: 5px; */
-    /* z-index: 10; */
-    /* font-size: 16px;
-    line-height: 38px;
-    left: 13px;
-    top: 0; */
-}
-
 
 .main-content_icon::before{
     content: "";
@@ -99,7 +98,7 @@ margin: 0;
     vertical-align: top;
     width: 100%;
     padding-top: 40px;
-    /* border: 3px solid purple; */
+  
 }
 
 
@@ -121,7 +120,6 @@ text-align: left;
 .main-content_table-head {
     color: rgba(181, 183, 192, 1);
     width: 1440px;
-    
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -182,7 +180,8 @@ width: 306px;
 height: 1198px;
 background: rgba(255, 255, 255, 1);
 margin-right: 71px;
-
+padding-top: 36px;
+padding-left: 28px;
 }
 
 .aside-title {
@@ -217,7 +216,8 @@ color: rgba(131, 131, 131, 1);
 }
 
 .aside-list-container {
-    padding-left: 29px;
+
+    padding-top: 64px;
 }
 
 .aside-list {
@@ -228,8 +228,15 @@ letter-spacing: -0.01em;
 text-align: left;
 color: rgba(145, 151, 179, 1);
 
-
 }
+.item {
+    width: 201px;
+    height: 33px;
+    padding-left: 49px;
+    padding-top: 13px;
+}
+
+
 .aside-title_item-dashboard::before {
     content: "";
     display: inline-block;
@@ -238,7 +245,9 @@ color: rgba(145, 151, 179, 1);
     background-image: url("../images/dashboard.svg");
     background-repeat: no-repeat;
     padding-left: 14px;
-
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .aside-title_item-product::before {
@@ -249,11 +258,24 @@ color: rgba(145, 151, 179, 1);
     background-image: url("../images/product.svg");
     background-repeat: no-repeat;
     padding-left: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.aside-title_item-product::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/chevron-right.svg");
+    background-repeat: no-repeat;
+   margin-left: 123px;
 }
 .aside-title_item-customers{
     background-color: rgba(89, 50, 234, 1);
     border-radius: 8px;
-    
+    color: #FFFFFF;
+    position: relative;
 }
 .aside-title_item-customers::before {
     content: "";
@@ -262,8 +284,32 @@ color: rgba(145, 151, 179, 1);
     height: 24px;
     background-image: url("../images/user.svg");
     background-repeat: no-repeat;
-    padding-left: 14px;
+    padding-left: 11px;
     fill:#9197B3;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.aside-title_item-customers::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/chevron-right.svg");
+    background-repeat: no-repeat;
+   margin-left: 100px;
+   color: #FFFFFF;
+}
+
+.aside-title_item-dashboard,
+.aside-title_item-product,
+.aside-title_item-income, 
+.aside-title_item-promote,
+.aside-title_item-promote,
+.aside-title_item-help {
+   
+    position: relative;
 }
 
 .aside-title_item-income::before {
@@ -274,6 +320,19 @@ color: rgba(145, 151, 179, 1);
     background-image: url("../images/income.svg");
     background-repeat: no-repeat;
     padding-left: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.aside-title_item-income::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/chevron-right.svg");
+    background-repeat: no-repeat;
+    margin-left: 124px;
 }
 
 .aside-title_item-promote::before {
@@ -284,6 +343,19 @@ color: rgba(145, 151, 179, 1);
     background-image: url("../images/promote.svg");
     background-repeat: no-repeat;
     padding-left: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.aside-title_item-promote::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/chevron-right.svg");
+    background-repeat: no-repeat;
+   margin-left: 117px;
 }
 
 .aside-title_item-help::before {
@@ -294,6 +366,19 @@ color: rgba(145, 151, 179, 1);
     background-image: url("../images/help.svg");
     background-repeat: no-repeat;
     padding-left: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.aside-title_item-help::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/chevron-right.svg");
+    background-repeat: no-repeat;
+   margin-left: 145px;
 }
 .aside-user {
     margin-top: 599px;
