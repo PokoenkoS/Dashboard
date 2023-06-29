@@ -41,12 +41,26 @@ margin: 0;
 
 .main-title {
 padding-top: 41px;
-font-size: 24px;
+/* font-size: 24px;
 font-weight: 500;
-line-height: 36px;
+line-height: 36px; */
 letter-spacing: 0em;
 text-align: left;
-
+@media screen and (min-width:480px){
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 36px;
+}
+@media screen and (min-width:768px){
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36px;
+}
+  @media screen and (min-width:1440px){
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
 }
 
 
@@ -415,7 +429,7 @@ padding-top: 36px;
 padding-left: 28px; */
 
   @media screen and (min-width:480px){
-        width: 120px;
+        width: 150px;
          margin-right: 10px;
          padding-top: 26px;
        padding-left: 8px;
@@ -456,6 +470,7 @@ text-align: left;
 align-items: center;
 position: relative; */
 padding-left: 20px;
+padding-top: 20px;
 &::before {
      content: "";
     display: inline-block;
@@ -536,20 +551,52 @@ color: rgba(131, 131, 131, 1);
 }
 
 .aside-list {
-font-size: 14px;
+/* font-size: 14px;
 font-weight: 500;
-line-height: 21px;
+line-height: 21px; */
+/* display: flex; */
 letter-spacing: -0.01em;
 text-align: left;
 color: rgba(145, 151, 179, 1);
-
+@media screen and (min-width:480px){
+    font-size: 12px;
+font-weight: 250;
+line-height: 15px;
+    
+}
+@media screen and (min-width:768px){
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    
+}
+  @media screen and (min-width:1440px){
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
 }
 .item {
     /* width: 201px; */
     height: 33px;
-    padding-left: 49px;
+    /* padding-left: 49px; */
     padding-top: 13px;
     position: relative;
+    @media screen and (min-width:480px){
+        padding-left: 40px;
+        padding-top: 13px;
+        width: 100px;
+    }
+    @media screen and (min-width:768px){
+        padding-left: 49px;
+        padding-top: 13px;
+        
+    }
+      @media screen and (min-width:1440px){
+        padding-left: 49px;
+       width: 201px;
+       padding-top: 13px;
+    }
 }
 
 
@@ -578,20 +625,89 @@ color: rgba(145, 151, 179, 1);
     top: 10px;
     left: 10px;
 }
-.aside-title_item-product::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url("../images/chevron-right.svg");
-    background-repeat: no-repeat;
-   margin-left: 123px;
+.aside-title_item-product{
+    @media screen and (min-width:480px){
+       &::after {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/chevron-right.svg");
+        background-repeat: no-repeat;
+        margin-left: 25px;
+        
+    }
+        
+    }
+    @media screen and (min-width:768px){
+       &::after {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/chevron-right.svg");
+        background-repeat: no-repeat;
+        margin-left: 123px;
+    }
+    
+    }
+      @media screen and (min-width:1440px){
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/chevron-right.svg");
+        background-repeat: no-repeat;
+        margin-left: 123px;
+    }
+    }
+
 }
 .aside-title_item-customers{
     background-color: rgba(89, 50, 234, 1);
     border-radius: 8px;
     color: #FFFFFF;
-    position: relative;
+
+    @media screen and (min-width:480px){
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("../images/chevron-right.svg");
+            background-repeat: no-repeat;
+            margin-left: 10px;
+          
+        }
+        
+    }
+    @media screen and (min-width:768px){
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("../images/chevron-right.svg");
+            background-repeat: no-repeat;
+           margin-left: 100px;
+           padding-bottom: 5px;
+           color: #FFFFFF;
+        }
+        
+    }
+      @media screen and (min-width:1440px){
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("../images/chevron-right.svg");
+            background-repeat: no-repeat;
+           margin-left: 100px;
+           color: #FFFFFF;
+        }
+    }
 }
 .aside-title_item-customers::before {
     content: "";
@@ -600,23 +716,14 @@ color: rgba(145, 151, 179, 1);
     height: 24px;
     background-image: url("../images/user.svg");
     background-repeat: no-repeat;
-    padding-left: 11px;
+    padding-left: 5px;
     fill:#9197B3;
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-.aside-title_item-customers::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url("../images/chevron-right.svg");
-    background-repeat: no-repeat;
-   margin-left: 100px;
-   color: #FFFFFF;
-}
+
 
 
 .aside-title_item-income::before {
@@ -632,15 +739,44 @@ color: rgba(145, 151, 179, 1);
     left: 10px;
 }
 
-.aside-title_item-income::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url("../images/chevron-right.svg");
-    background-repeat: no-repeat;
-    margin-left: 124px;
+.aside-title_item-income{
+    @media screen and (min-width:480px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 28px;
+     }
+         
+     }
+     @media screen and (min-width:768px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 123px;
+     }
+         
+     }
+       @media screen and (min-width:1440px){
+     &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 123px;
+     }
+     }
 }
+
 
 .aside-title_item-promote::before {
     content: "";
@@ -655,14 +791,42 @@ color: rgba(145, 151, 179, 1);
     left: 10px;
 }
 
-.aside-title_item-promote::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url("../images/chevron-right.svg");
-    background-repeat: no-repeat;
-   margin-left: 117px;
+.aside-title_item-promote{
+    @media screen and (min-width:480px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 25px;
+     }
+         
+     }
+     @media screen and (min-width:768px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 118px;
+     }
+         
+     }
+       @media screen and (min-width:1440px){
+     &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 118px;
+     }
+     }
 }
 
 .aside-title_item-help::before {
@@ -678,15 +842,44 @@ color: rgba(145, 151, 179, 1);
     left: 10px;
 }
 
-.aside-title_item-help::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url("../images/chevron-right.svg");
-    background-repeat: no-repeat;
-   margin-left: 145px;
+.aside-title_item-help{
+    @media screen and (min-width:480px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 50px;
+     }
+         
+     }
+     @media screen and (min-width:768px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 145px;
+     }
+         
+     }
+       @media screen and (min-width:1440px){
+     &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 145px;
+     }
+     }
 }
+
 .aside-user {
     /* margin-top: 599px; */
     display: flex;
