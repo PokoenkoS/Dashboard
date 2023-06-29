@@ -86,7 +86,8 @@ text-align: left;
    font-style: SemiBold; */
 
    @media screen and (min-width:480px){
-    font-size: 12px; 
+    font-size: 15px;
+    font-weight: 80px; 
    /* font-style: SemiBold; */
 }
 @media screen and (min-width:768px){
@@ -118,39 +119,111 @@ text-align: left;
 }
 }
 
-.main-content_input{
-    height: 38px;
-    border: none;
-    background-color:  rgba(249, 251, 255, 1);
-    border-radius: 10px;
-    padding-left: 40px;
-  
-    }
-
 .main-content_search {
     position: relative;
     padding-right: 10px;
     padding-top: 14px;
 }
 
-.main-content_icon::before{
-    content: "";
-    background-image: url("../images/search.svg");
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    position: absolute;
-    top: 22px;
-   left: 8px;
-}
+.main-content_input{
+    /* height: 38px; */
+    border: none;
+    background-color:  rgba(249, 251, 255, 1);
+    /* border-radius: 10px; */
+    /* padding-left: 40px; */
 
+    @media screen and (min-width:480px){
+        width: 100px;
+    height: 22px;
+    padding-left: 25px;
+    border-radius: 7px;
+    }
+    @media screen and (min-width:768px){
+    height: 28px;
+    padding-left: 20px;
+    border-radius: 8px;
+    }
+      @media screen and (min-width:1440px){
+    height: 38px;
+    padding-left: 40px;
+    border-radius: 10px;
+    }
+    }
+
+
+
+.main-content_icon{
+    @media screen and (min-width:480px){
+        /* width: 14px;
+        height: 14px; */
+        /* top: 10px;
+        left: 3px; */
+        &::before{
+            content: "";
+            background-image: url("../images/search.svg");
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 8px;
+          
+        }
+        }
+        @media screen and (min-width:768px){
+            /* width: 24px;
+            height: 24px;
+            top: 22px;
+            left: 8px; */
+            &::before{
+                content: "";
+                background-image: url("../images/search.svg");
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                position: absolute;
+                top: 22px;
+                left: 8px;
+              
+            }
+        }
+          @media screen and (min-width:1440px){
+            /* width: 24px;
+            height: 24px;
+            top: 22px;
+            left: 8px; */
+            &::before{
+                content: "";
+                background-image: url("../images/search.svg");
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                position: absolute;
+                top: 22px;
+                left: 8px;
+              
+            }
+        }
+    
+    
+}
 
 
 .main-content_table {
     vertical-align: top;
-    /* width: 100%; */
-    padding-top: 40px;
+    width: 100%;
+    /* padding-top: 40px; */
   
+    @media screen and (min-width:480px){
+        padding-top: 20px;
+            }
+            @media screen and (min-width:768px){
+                padding-top: 30px;
+            }
+              @media screen and (min-width:1440px){
+                padding-top: 40px;
+           
+            }
 }
 
 
@@ -159,48 +232,101 @@ text-align: left;
 }
 
 th, td {
-padding: 20px 0;
+/* padding: 20px 0; */
 border-bottom: solid 1px #EEEEEE;
-font-size: 14px;
-font-weight: 500;
+/* font-size: 14px;
+font-weight: 500; */
 line-height: 21px;
 letter-spacing: -0.01em;
 text-align: left; 
+
+@media screen and (min-width:480px){
+padding: 5px 0;
+font-size: 5px;
+font-weight: 100;
+    }
+    @media screen and (min-width:768px){
+padding: 10px 0;
+font-size: 7px;
+font-weight: 200;
+    }
+      @media screen and (min-width:1440px){
+padding: 20px 0;
+font-size: 14px;
+font-weight: 500;
+   
+    }
   }
 
 
 .main-content_table-head {
     color: rgba(181, 183, 192, 1);
-    font-size: 14px;
-    font-weight: 500;
+    /* font-size: 14px;
+    font-weight: 500; */
     line-height: 21px;
     letter-spacing: -0.01em;
     text-align: left;
-   
+    @media screen and (min-width:480px){
+        
+        font-size: 5px;
+        font-weight: 100;
+            }
+            @media screen and (min-width:768px){
+      
+        font-size: 7px;
+        font-weight: 200;
+            }
+              @media screen and (min-width:1440px){
+       
+        font-size: 14px;
+        font-weight: 500;
+           
+            }
     }
 
 
 .main-list_activ-btn {
-width: 80px;
-height: 29px;
-padding: 4px 18px 4px 18px;
+/* width: 80px;
+height: 29px; */
+/* padding: 4px 18px 4px 18px; */
 border-radius: 4px;
 border: 1px solid rgba(0, 176, 135, 1);
 color: rgba(0, 176, 135, 1);
-font-size: 14px;
-font-weight: 500;
-line-height: 21px;
+/* font-size: 14px;
+font-weight: 500; */
+/* line-height: 21px; */
 letter-spacing: -0.01em;
 text-align: left;
 background: 
 linear-gradient(0deg, rgba(22, 192, 152, 0.38), rgba(22, 192, 152, 0.38));
 
+        @media screen and (min-width:480px){
+            width: 35px;
+        height: 15px;
+        padding: 0px 5px 0px 5px;
+        font-size: 8px;
+        font-weight: 250;
+        }
+        @media screen and (min-width:768px){
+            width: 50px;
+            height: 20px;
+            padding: 0px 10px 0px 10px;
+            font-size: 10px;
+            font-weight: 300;
+        }
+          @media screen and (min-width:1440px){
+            width: 80px;
+            height: 29px;
+            padding: 4px 18px 4px 18px;
+            font-size: 14px;
+            font-weight: 500;
+        }
 }
 
 .main-list_inactiv-btn{
-    width: 80px;
+    /* width: 80px;
     height: 29px;
-    padding: 4px 12px 4px 12px;
+    padding: 4px 12px 4px 12px; */
     border-radius: 4px;
     border: 1px;
     border: 1px solid rgba(223, 4, 4, 1);
@@ -211,7 +337,27 @@ background: linear-gradient(0deg, rgba(255, 197, 197, 1),
 rgba(255, 197, 197, 1));
 color:rgba(223, 4, 4, 1);
 
-    
+@media screen and (min-width:480px){
+    width: 35px;
+height: 15px;
+padding: 0px 3px 0px 3px;
+font-size: 8px;
+font-weight: 250;
+}
+@media screen and (min-width:768px){
+    width: 50px;
+    height: 20px;
+    padding: 0px 8px 0px 8px;
+    font-size: 10px;
+    font-weight: 300;
+}
+  @media screen and (min-width:1440px){
+    width: 80px;
+    height: 29px;
+    padding: 4px 12px 4px 12px;
+    font-size: 14px;
+    font-weight: 500;
+}    
 }
 .main-content_pages {
     display: flex;
