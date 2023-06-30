@@ -1,0 +1,35 @@
+.aside-title_item-income{
+    @media screen and (min-width:480px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 28px;
+     }
+         }
+     @media screen and (min-width:768px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 123px;
+     }
+         }
+       @media screen and (min-width:1440px){
+     &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 123px;
+     }
+     }
+}

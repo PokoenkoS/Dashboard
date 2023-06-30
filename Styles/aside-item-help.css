@@ -1,0 +1,49 @@
+.aside-title_item-help::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/help.svg");
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.aside-title_item-help{
+    @media screen and (min-width:480px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 50px;
+     }
+         }
+     @media screen and (min-width:768px){
+        &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 150px;
+     }
+         
+     }
+       @media screen and (min-width:1440px){
+     &::after {
+         content: "";
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         background-image: url("../images/chevron-right.svg");
+         background-repeat: no-repeat;
+         margin-left: 145px;
+     }
+     }
+}

@@ -1,0 +1,12 @@
+.aside-title_item-dashboard::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/dashboard.svg");
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

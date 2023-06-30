@@ -1,0 +1,67 @@
+.aside-title_item-customers{
+    background-color: rgba(89, 50, 234, 1);
+    border-radius: 8px;
+    color: #FFFFFF;
+
+    @media screen and (min-width:480px){
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("../images/chevron-right.svg");
+            background-repeat: no-repeat;
+            margin-left: 10px;
+          }
+        }
+    @media screen and (min-width:768px){
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("../images/chevron-right.svg");
+            background-repeat: no-repeat;
+           margin-left: 100px;
+           padding-bottom: 5px;
+           color: #FFFFFF;
+        }
+        }
+      @media screen and (min-width:1440px){
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("../images/chevron-right.svg");
+            background-repeat: no-repeat;
+           margin-left: 100px;
+           color: #FFFFFF;
+        }
+    }
+}
+.aside-title_item-customers::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/user.svg");
+    background-repeat: no-repeat;
+    padding-left: 5px;
+    fill:#9197B3;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.aside-title_item-income::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/income.svg");
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
